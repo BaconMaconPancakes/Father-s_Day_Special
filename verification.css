@@ -1,0 +1,54 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url("img1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.body {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 150px 300px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.button {
+    font-size: 24px;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

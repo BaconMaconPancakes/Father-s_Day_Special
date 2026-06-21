@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Fathers Day</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <h1>❗Happy Fathers Day❗</h1>
+        <button onclick="playMusic()">Play Music 🎵</button>
+    </div>
+
+    <div class="letter">
+        <div class="greeting">
+            <h3>Dear Dad,</h3>
+        </div>
+
+        <div class="message">
+            <p>Happy Father's Day DAD!!! I bet you didnt expect this hahahaha. This has taken me around 2 hours? But I think it is worth it hahaha. Thank you for always supporting and guiding me for all these years,
+                me being 20 also means its your 20 years of being my dad, hope I am not too much of a headache to deal with. But truly, I am grateful
+                for you support and love to all of us, I look forward to the day when I can repay your kindness back to you. Make sure to take ample rest
+                and take care of your health, hope to see you soon. 
+            </p>
+            <p>Sincerely Vignesh</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <audio id="song" preload="auto" loop>
+        <source src="audio.m4a" type="audio/mpeg">
+    </audio>
+
+    <script>
+    function playMusic() {
+    document.getElementById("song").play();
+
+    confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0 }
+    });
+    setInterval(() => {
+            confetti({
+                particleCount: 100,
+                spread: 140,
+                origin: { y: 0 }
+            });
+        }, 1000);
+}
+    </script>
+</body>
+</html>

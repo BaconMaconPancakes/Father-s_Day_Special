@@ -1,0 +1,74 @@
+body {
+    font-family: 'Rye', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url("img2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* black filter */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.letter {
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.greeting {
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.message {
+    font-size: 18px;
+
+    max-width: 700px;
+    margin: auto;
+
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.message p:last-child {
+    text-align: right;
+    margin-top: 40px;
+}
+
+button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color: lightgray;
+}
